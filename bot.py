@@ -323,6 +323,12 @@ async def send_to_pm(client, callback):
                 [[InlineKeyboardButton("Get File in PM", url=link)]]
             ),
         )
+import asyncio
+
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
+
+app.run()
 
 
 app.run()
